@@ -1,0 +1,14 @@
+{
+  "name": "ticket",
+  "version": "1.0.0",
+  "descritption": "Support ticket management API.",
+  "main": "src/service.src",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [],
+  "author": "Victor Brossa",
+  "license": "ISC",
+  "description": ""
+}
