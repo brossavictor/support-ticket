@@ -1,1 +1,31 @@
-{"tickets":[{"id":"b9c283aa-c3fe-4069-a48d-9e6105827316","equipment":"display","description":"Black screen","user_name":"John Doe","status":"open","created_at":"2025-03-20T01:21:25.414Z","updated_at":"2025-03-20T01:21:25.414Z"},{"id":"a2de18f7-30c4-4822-ac85-d44f556d4b7b","equipment":"keyboard","description":"The macros are not working.","user_name":"Jane Doe","status":"open","created_at":"2025-03-20T01:42:08.861Z","updated_at":"2025-03-20T01:42:08.861Z"},{"id":"759273ec-9f65-4aa7-b546-c1d3aca1f4fb","equipment":"mouse","description":"I can see no laser.","user_name":"Tea Pot","status":"open","created_at":"2025-03-20T02:11:56.292Z","updated_at":"2025-03-20T02:11:56.292Z"}]}
+{
+  "tickets": [
+    {
+      "id": "b9c283aa-c3fe-4069-a48d-9e6105827316",
+      "equipment": "motherboard",
+      "description": "The motherboard is dead!",
+      "user_name": "John Doe",
+      "status": "open",
+      "created_at": "2025-03-20T01:21:25.414Z",
+      "updated_at": "2025-03-20T18:45:37.316Z"
+    },
+    {
+      "id": "a2de18f7-30c4-4822-ac85-d44f556d4b7b",
+      "equipment": "keyboard",
+      "description": "The macros are not working.",
+      "user_name": "Jane Doe",
+      "status": "open",
+      "created_at": "2025-03-20T01:42:08.861Z",
+      "updated_at": "2025-03-20T01:42:08.861Z"
+    },
+    {
+      "id": "759273ec-9f65-4aa7-b546-c1d3aca1f4fb",
+      "equipment": "mouse",
+      "description": "I can see no laser.",
+      "user_name": "Tea Pot",
+      "status": "open",
+      "created_at": "2025-03-20T02:11:56.292Z",
+      "updated_at": "2025-03-20T02:11:56.292Z"
+    }
+  ]
+}
