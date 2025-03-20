@@ -1,4 +1,3 @@
-import { error } from "node:console";
 import fs from "node:fs/promises";
 
 const DATABASE_PATH = new URL("db.json", import.meta.url);
@@ -11,7 +10,7 @@ export class Database {
       .then((data) => {
         this.#database = JSON.parse(data);
       })
-      .catch(this.#persist());
+      .catch(() => this.#persist);
   }
 
   #persist() {
@@ -20,13 +19,18 @@ export class Database {
 
   insert(table, data) {
     if (Array.isArray(this.#database[table])) {
-      this.#database[table.push(data)];
+      this.#database[table].push(data);
     } else {
       this.#database[table] = [data];
     }
 
     this.#persist();
 
+    return data;
+  }
+
+  select(table) {
+    let data = this.#database[table] ?? [];
     return data;
   }
 }

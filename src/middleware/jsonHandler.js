@@ -9,8 +9,7 @@ export async function jsonHandler(request, response) {
     request.body = JSON.parse(Buffer.concat(buffers).toString());
   } catch (error) {
     request.body = null;
-    console.log(error);
   }
 
-  response.setHeader("Content-Tupe", "application/json");
+  response.setHeader("Content-Type", "application/json");
 }
